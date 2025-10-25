@@ -15,7 +15,7 @@ public class ExtentReportManager {
     public static ExtentReports getReporter() {
         if (extent == null) {
             // Path and configuration
-            String path = "test-output/ExtentReports/AutomationReport.html";
+            String path = "test-output/ExtentReports/AutomationReport1.html";
             ExtentSparkReporter htmlReporter = new ExtentSparkReporter(path);
             htmlReporter.config().setDocumentTitle("BStackDemo Automation Report");
             htmlReporter.config().setReportName("Functional Test Execution Results");

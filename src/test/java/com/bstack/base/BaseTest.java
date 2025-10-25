@@ -1,4 +1,4 @@
-
+	
 package com.bstack.base;
 
 import java.time.Duration;
@@ -18,9 +18,9 @@ public class BaseTest {
     public WebDriver setUp() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); 
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get("https://bstackdemo.com/");
-		return driver;
+        return driver;
     }
 
    

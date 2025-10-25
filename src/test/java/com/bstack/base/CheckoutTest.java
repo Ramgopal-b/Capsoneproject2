@@ -28,7 +28,7 @@ public class CheckoutTest extends BaseTest {
 
     @BeforeMethod
     public void initPages() throws InterruptedException {
-        super.setUp(); // Calls BaseTest setUp
+        super.setUp();
         loginPage = new LoginPage(driver);
         productPage = new ProductPage(driver);
         cartPage = new CartPage(driver);

@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ramgopal\AppData\Local\Temp\testng-eclipse-1149376321\testng-customsuite.xml</span>
+                    <span>C:\Users\ramgopal\AppData\Local\Temp\testng-eclipse--237234031\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,17 +103,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.bstack.base.LoginTest" class="method navigator-link" hash-for-method="empty">empty</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.bstack.base.LoginTest" class="method navigator-link" hash-for-method="TC_001_validLogin">TC_001_validLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.bstack.base.LoginTest" class="method navigator-link" hash-for-method="invalid">invalid</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.bstack.base.LoginTest" class="method navigator-link" hash-for-method="TC_002_invalidLogin">TC_002_invalidLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.bstack.base.LoginTest" class="method navigator-link" hash-for-method="valid">valid</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.bstack.base.LoginTest" class="method navigator-link" hash-for-method="TC_003_emptyLogin">TC_003_emptyLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -136,23 +136,29 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="empty">
-                  </a> <!-- empty -->
-                  <span class="method-name">empty</span>
+                  <a name="TC_001_validLogin">
+                  </a> <!-- TC_001_validLogin -->
+                  <span class="method-name">TC_001_validLogin</span>
+                  <em>
+(Verify successful login with valid credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="invalid">
-                  </a> <!-- invalid -->
-                  <span class="method-name">invalid</span>
+                  <a name="TC_002_invalidLogin">
+                  </a> <!-- TC_002_invalidLogin -->
+                  <span class="method-name">TC_002_invalidLogin</span>
+                  <em>
+(Verify login failure with invalid credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="valid">
-                  </a> <!-- valid -->
-                  <span class="method-name">valid</span>
+                  <a name="TC_003_emptyLogin">
+                  </a> <!-- TC_003_emptyLogin -->
+                  <span class="method-name">TC_003_emptyLogin</span>
+                  <em>
+(Verify login failure with empty credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,7 +166,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ramgopal\AppData\Local\Temp\testng-eclipse-1149376321\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ramgopal\AppData\Local\Temp\testng-eclipse--237234031\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -211,22 +217,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'valid')
+data.setCell(0, 1, 'TC_003_emptyLogin')
 data.setCell(0, 2, 'com.bstack.base.LoginTest')
-data.setCell(0, 3, 19499);
+data.setCell(0, 3, 5753);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'invalid')
+data.setCell(1, 1, 'TC_002_invalidLogin')
 data.setCell(1, 2, 'com.bstack.base.LoginTest')
-data.setCell(1, 3, 8671);
+data.setCell(1, 3, 4673);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'empty')
+data.setCell(2, 1, 'TC_001_validLogin')
 data.setCell(2, 2, 'com.bstack.base.LoginTest')
-data.setCell(2, 3, 6115);
+data.setCell(2, 3, 4399);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -259,32 +265,32 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">resetAppState</span>
-                <span class="method-start">11604 ms</span>
+                <span class="method-start">6239 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">empty</span>
-                <span class="method-start">12191 ms</span>
+                <span class="method-name">TC_001_validLogin</span>
+                <span class="method-start">23205 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">resetAppState</span>
-                <span class="method-start">18325 ms</span>
+                <span class="method-start">27609 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">invalid</span>
-                <span class="method-start">18808 ms</span>
+                <span class="method-name">TC_002_invalidLogin</span>
+                <span class="method-start">28729 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">resetAppState</span>
-                <span class="method-start">27577 ms</span>
+                <span class="method-start">33424 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">valid</span>
-                <span class="method-start">27868 ms</span>
+                <span class="method-name">TC_003_emptyLogin</span>
+                <span class="method-start">34389 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">47374 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownReport</span>
+                <span class="method-start">40188 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

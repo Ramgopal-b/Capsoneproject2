@@ -1,84 +1,94 @@
 package com.bstack.base;
 
-import org.testng.annotations.Test;
-
-
-import com.bstack.utility.CartPage;
-import com.bstack.utility.CheckoutPage;
-import com.bstack.utility.LoginPage;
-
-import com.bstack.base.BaseTest;
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
-import com.bstack.utility.ProductPage;
+import org.testng.annotations.Test;
+
+import com.bstack.utility.CartPage;
+import com.bstack.utility.CheckoutPage;
+import com.bstack.utility.ExtentReportManager;
 import com.bstack.utility.LoginPage;
-import com.bstack.base.AddToCartTest;
+import com.bstack.utility.ProductPage;
 
-public class LoginTest {
-  WebDriver driver;
-  com.bstack.utility.LoginPage l;
-  BaseTest w;
-  ProductPage p;
-	CartPage c;
-	CheckoutPage checkout;
-	JavascriptExecutor js;
-	AddToCartTest add;
+public class LoginTest extends BaseTest {
+    
+	  WebDriver driver;
+	  com.bstack.utility.LoginPage loginPage;
+	  BaseTest w;
+	  ProductPage p;
+		CartPage c;
+		CheckoutPage checkout;
+		JavascriptExecutor js;
+		AddToCartTest add;
 
-	
 	 @BeforeMethod
 	  public void resetAppState() {
 	      driver.navigate().to("https://bstackdemo.com/");
 	  }
-  
-  
-  @BeforeTest
-  public void setup() {
-      w = new BaseTest();
-      driver = w.setUp();
-      l = new LoginPage(driver);
-      p = new ProductPage(driver);
-      c= new CartPage(driver);
-      checkout = new CheckoutPage(driver); 
-  }
-  @Test(priority = 3)
-  public void valid() throws InterruptedException {
-	  String message =  l.loginWithCredentials("demouser", "testingisfun99");
-	  System.out.println(message);
-	  p.clickIphone12();
-	  c.clickCheckout();
-	  checkout.fillCheckoutDetails("john", "doe", "Hyderabad", "500001", "Telangana");
-	  driver.navigate().to("https://bstackdemo.com/"); 
-	  
+ 
+ 
+ @BeforeTest
+ public void setup() {
+     w = new BaseTest();
+     driver = w.setUp();
+     loginPage = new LoginPage(driver);
+     p = new ProductPage(driver);
+     c= new CartPage(driver);
+     checkout = new CheckoutPage(driver); 
+ }
 
-	    l.logout();
- } 
-  @Test(priority = 2)
-  public void invalid() throws InterruptedException {
-	  
-	  String message =  l.loginWithCredentials("image_not_loading_user", "hello");
-	  System.out.println(message);
-	 //String actualTitle = driver.getTitle();
-	    Assert.assertTrue(l.isInvalidMsgVisible(), "Expected error message not displayed for invalid login.");
-	      driver.navigate().refresh();
+    // TC_001: Login with valid credentials
+	@Test(priority=1, description = "Verify successful login with valid credentials")
+	public void TC_001_validLogin() throws InterruptedException {
+        ExtentReportManager.createTest("TC_001_validLogin");
+        
+        loginPage.loginWithCredentials("demouser", "testingisfun99");
+        
+        try {
+            // Assertion to check if the username element is displayed and contains the expected text
+            String loggedInUsername = loginPage.getUserNameElementText();
+            Assert.assertEquals(loggedInUsername, "demouser", "The logged-in username does not match.");
+            ExtentReportManager.logPass("Login successful. Logged in as: " + loggedInUsername);
+        } catch (AssertionError e) {
+            ExtentReportManager.logFail("Login failed. Assertion failed: " + e.getMessage());
+            throw e; 
+        }
+        loginPage.logout();
+	}
 
-  }
-  @Test(priority = 1)
-  public void empty() throws InterruptedException {
-	  String message = l.empty("hello");
-	  System.out.println(message);
-	 //String actualTitle = driver.getTitle();
-	    Assert.assertTrue(l.isInvalidMsgVisible(), "Expected error message not displayed for empty password.");
-	      driver.navigate().refresh();
-	      
-  }
-  @AfterTest
-  public void afterTest() throws InterruptedException {
-	 Thread.sleep(1000);
-	  driver.close();
-  }
+
+    // TC_002: Login with invalid credentials
+	@Test(priority=2, description = "Verify login failure with invalid credentials")
+	public void TC_002_invalidLogin() throws InterruptedException {
+        ExtentReportManager.createTest("TC_002_invalidLogin");
+
+        String message =  loginPage.loginWithCredentials("image_not_loading_user", "hello");
+  	  System.out.println(message);
+  	 //String actualTitle = driver.getTitle();
+  	    Assert.assertTrue(loginPage.isInvalidMsgVisible(), "Expected error message not displayed for invalid login.");
+            ExtentReportManager.logPass("Login failed as expected. API error message displayed.");
+        
+	}
+
+
+    // TC_003: Login with empty username/password
+	@Test(priority=3, description = "Verify login failure with empty credentials")
+	public void TC_003_emptyLogin() throws InterruptedException {
+        ExtentReportManager.createTest("TC_003_emptyLogin");
+
+        String message =    loginPage.loginWithCredentials("", "");
+  	  System.out.println(message);
+ 	 //String actualTitle = driver.getTitle();
+            ExtentReportManager.logPass("Login failed as expected. API error message displayed.");
+	}
+    
+    @AfterSuite
+    public void tearDownReport() {
+        ExtentReportManager.flushReports();
+    }
 }

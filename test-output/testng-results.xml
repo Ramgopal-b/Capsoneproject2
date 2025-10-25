@@ -2,43 +2,43 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-24T13:13:25 IST" name="Default suite" finished-at="2025-10-24T13:14:14 IST" duration-ms="48850">
+  <suite started-at="2025-10-25T20:05:29 IST" name="Default suite" finished-at="2025-10-25T20:06:10 IST" duration-ms="40155">
     <groups>
     </groups>
-    <test started-at="2025-10-24T13:13:25 IST" name="Default test" finished-at="2025-10-24T13:14:14 IST" duration-ms="48850">
+    <test started-at="2025-10-25T20:05:29 IST" name="Default test" finished-at="2025-10-25T20:06:10 IST" duration-ms="40155">
       <class name="com.bstack.base.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.bstack.base.LoginTest@178213b]" started-at="2025-10-24T13:13:25 IST" name="setup" finished-at="2025-10-24T13:13:36 IST" duration-ms="11512" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:05:29 IST" name="setup" finished-at="2025-10-25T20:05:36 IST" duration-ms="6186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="resetAppState()[pri:0, instance:com.bstack.base.LoginTest@178213b]" started-at="2025-10-24T13:13:37 IST" name="resetAppState" finished-at="2025-10-24T13:13:37 IST" duration-ms="583" status="PASS">
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:05:36 IST" name="resetAppState" finished-at="2025-10-25T20:05:53 IST" duration-ms="16966" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppState -->
-        <test-method signature="empty()[pri:1, instance:com.bstack.base.LoginTest@178213b]" started-at="2025-10-24T13:13:37 IST" name="empty" finished-at="2025-10-24T13:13:43 IST" duration-ms="6115" status="PASS">
+        <test-method signature="TC_001_validLogin()[pri:1, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:05:53 IST" name="TC_001_validLogin" description="Verify successful login with valid credentials" finished-at="2025-10-25T20:05:57 IST" duration-ms="4399" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- empty -->
-        <test-method is-config="true" signature="resetAppState()[pri:0, instance:com.bstack.base.LoginTest@178213b]" started-at="2025-10-24T13:13:43 IST" name="resetAppState" finished-at="2025-10-24T13:13:44 IST" duration-ms="474" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resetAppState -->
-        <test-method signature="invalid()[pri:2, instance:com.bstack.base.LoginTest@178213b]" started-at="2025-10-24T13:13:44 IST" name="invalid" finished-at="2025-10-24T13:13:52 IST" duration-ms="8671" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalid -->
-        <test-method is-config="true" signature="resetAppState()[pri:0, instance:com.bstack.base.LoginTest@178213b]" started-at="2025-10-24T13:13:53 IST" name="resetAppState" finished-at="2025-10-24T13:13:53 IST" duration-ms="291" status="PASS">
+        </test-method> <!-- TC_001_validLogin -->
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:05:57 IST" name="resetAppState" finished-at="2025-10-25T20:05:58 IST" duration-ms="1120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppState -->
-        <test-method signature="valid()[pri:3, instance:com.bstack.base.LoginTest@178213b]" started-at="2025-10-24T13:13:53 IST" name="valid" finished-at="2025-10-24T13:14:12 IST" duration-ms="19499" status="PASS">
+        <test-method signature="TC_002_invalidLogin()[pri:2, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:05:58 IST" name="TC_002_invalidLogin" description="Verify login failure with invalid credentials" finished-at="2025-10-25T20:06:03 IST" duration-ms="4673" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- valid -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.bstack.base.LoginTest@178213b]" started-at="2025-10-24T13:14:12 IST" name="afterTest" finished-at="2025-10-24T13:14:14 IST" duration-ms="1458" status="PASS">
+        </test-method> <!-- TC_002_invalidLogin -->
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:06:03 IST" name="resetAppState" finished-at="2025-10-25T20:06:04 IST" duration-ms="965" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
+        </test-method> <!-- resetAppState -->
+        <test-method signature="TC_003_emptyLogin()[pri:3, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:06:04 IST" name="TC_003_emptyLogin" description="Verify login failure with empty credentials" finished-at="2025-10-25T20:06:10 IST" duration-ms="5753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_003_emptyLogin -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:06:10 IST" name="tearDownReport" finished-at="2025-10-25T20:06:10 IST" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
       </class> <!-- com.bstack.base.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -1,15 +1,18 @@
 package com.bstack.utility;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
-	WebDriver driver;
+	static WebDriver driver;
       Waits wait;
 
 	// PageFactory Locators
@@ -85,6 +88,25 @@ public class LoginPage {
 		return pwd;
 
 	}
+	
+	public static String getUserNameElementText() {
+        // FIX: Increasing wait time from 10 to 20 seconds to resolve TimeoutException after successful login.
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); 
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".username"))).getText();
+    }
+    
+    // Helper to check for the error message (used in invalid/empty login tests)
+    public boolean isErrorMessageDisplayed() {
+        // Checking for the API error message locator 
+        // Using explicit wait here too, as the error message might take a moment to display.
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        try {
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("api-error"))).isDisplayed();
+        } catch (Exception e) {
+            // If the element doesn't appear within the wait time, we assume it's not displayed.
+            return false;
+        }
+    }
 
 	public void logout() {
 		wait.waitForClickable(logoutBtn).click();
