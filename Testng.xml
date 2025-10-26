@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Bstackdemo_Suite">
+  <test thread-count="5" name="Tests_Bstackdemo">
+    <classes>
+      <!-- 
+        Running the ECommerceTest class, which now contains all 
+        Login, AddToCart, and Checkout test cases (TC_001 to TC_008).
+      -->
+      <class name="com.bstack.base.LoginTest"/>
+      <class name="com.bstack.base.AddToCartTest"/>
+    </classes>
+  </test> <!-- Tests_Bstackdemo -->
+</suite> <!-- Bstackdemo_Suite -->

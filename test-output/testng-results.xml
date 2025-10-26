@@ -1,45 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-25T20:05:29 IST" name="Default suite" finished-at="2025-10-25T20:06:10 IST" duration-ms="40155">
+  <suite started-at="2025-10-26T12:01:38 IST" name="Bstackdemo_Suite" finished-at="2025-10-26T12:03:16 IST" duration-ms="97514">
     <groups>
     </groups>
-    <test started-at="2025-10-25T20:05:29 IST" name="Default test" finished-at="2025-10-25T20:06:10 IST" duration-ms="40155">
+    <test started-at="2025-10-26T12:01:38 IST" name="Tests_Bstackdemo" finished-at="2025-10-26T12:03:16 IST" duration-ms="97514">
       <class name="com.bstack.base.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:05:29 IST" name="setup" finished-at="2025-10-25T20:05:36 IST" duration-ms="6186" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bstack.base.LoginTest@2c532cd8]" started-at="2025-10-26T12:01:48 IST" name="setup" finished-at="2025-10-26T12:01:59 IST" duration-ms="10450" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="resetAppState()[pri:0, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:05:36 IST" name="resetAppState" finished-at="2025-10-25T20:05:53 IST" duration-ms="16966" status="PASS">
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:com.bstack.base.LoginTest@2c532cd8]" started-at="2025-10-26T12:01:59 IST" name="resetAppState" finished-at="2025-10-26T12:02:00 IST" duration-ms="634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppState -->
-        <test-method signature="TC_001_validLogin()[pri:1, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:05:53 IST" name="TC_001_validLogin" description="Verify successful login with valid credentials" finished-at="2025-10-25T20:05:57 IST" duration-ms="4399" status="PASS">
+        <test-method signature="TC_001_validLogin()[pri:1, instance:com.bstack.base.LoginTest@2c532cd8]" started-at="2025-10-26T12:02:00 IST" name="TC_001_validLogin" description="Verify successful login with valid credentials" finished-at="2025-10-26T12:02:10 IST" duration-ms="10654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_001_validLogin -->
-        <test-method is-config="true" signature="resetAppState()[pri:0, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:05:57 IST" name="resetAppState" finished-at="2025-10-25T20:05:58 IST" duration-ms="1120" status="PASS">
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:com.bstack.base.LoginTest@2c532cd8]" started-at="2025-10-26T12:02:10 IST" name="resetAppState" finished-at="2025-10-26T12:02:11 IST" duration-ms="237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppState -->
-        <test-method signature="TC_002_invalidLogin()[pri:2, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:05:58 IST" name="TC_002_invalidLogin" description="Verify login failure with invalid credentials" finished-at="2025-10-25T20:06:03 IST" duration-ms="4673" status="PASS">
+        <test-method signature="TC_002_invalidLogin()[pri:2, instance:com.bstack.base.LoginTest@2c532cd8]" started-at="2025-10-26T12:02:11 IST" name="TC_002_invalidLogin" description="Verify login failure with invalid credentials" finished-at="2025-10-26T12:02:20 IST" duration-ms="9219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_002_invalidLogin -->
-        <test-method is-config="true" signature="resetAppState()[pri:0, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:06:03 IST" name="resetAppState" finished-at="2025-10-25T20:06:04 IST" duration-ms="965" status="PASS">
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:com.bstack.base.LoginTest@2c532cd8]" started-at="2025-10-26T12:02:20 IST" name="resetAppState" finished-at="2025-10-26T12:02:21 IST" duration-ms="1106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppState -->
-        <test-method signature="TC_003_emptyLogin()[pri:3, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:06:04 IST" name="TC_003_emptyLogin" description="Verify login failure with empty credentials" finished-at="2025-10-25T20:06:10 IST" duration-ms="5753" status="PASS">
+        <test-method signature="TC_003_emptyLogin()[pri:3, instance:com.bstack.base.LoginTest@2c532cd8]" started-at="2025-10-26T12:02:21 IST" name="TC_003_emptyLogin" description="Verify login failure with empty credentials" finished-at="2025-10-26T12:02:27 IST" duration-ms="5702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_003_emptyLogin -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.bstack.base.LoginTest@18920cc]" started-at="2025-10-25T20:06:10 IST" name="tearDownReport" finished-at="2025-10-25T20:06:10 IST" duration-ms="353" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.bstack.base.LoginTest@2c532cd8]" started-at="2025-10-26T12:03:17 IST" name="tearDownReport" finished-at="2025-10-26T12:03:17 IST" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
       </class> <!-- com.bstack.base.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.bstack.base.AddToCartTest">
+        <test-method is-config="true" signature="initPages()[pri:0, instance:com.bstack.base.AddToCartTest@3700ec9c]" started-at="2025-10-26T12:01:38 IST" name="initPages" finished-at="2025-10-26T12:01:48 IST" duration-ms="10078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPages -->
+        <test-method signature="TC_004_addSingleItem()[pri:4, instance:com.bstack.base.AddToCartTest@3700ec9c]" started-at="2025-10-26T12:02:27 IST" name="TC_004_addSingleItem" description="Verify adding a single item to cart" finished-at="2025-10-26T12:02:38 IST" duration-ms="11109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_004_addSingleItem -->
+        <test-method signature="TC_005_addMultipleItems()[pri:5, instance:com.bstack.base.AddToCartTest@3700ec9c]" started-at="2025-10-26T12:02:38 IST" name="TC_005_addMultipleItems" description="Verify adding multiple items and checking cart count" finished-at="2025-10-26T12:02:39 IST" duration-ms="1421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_005_addMultipleItems -->
+        <test-method signature="TC_006_removeItem()[pri:6, instance:com.bstack.base.AddToCartTest@3700ec9c]" started-at="2025-10-26T12:02:39 IST" name="TC_006_removeItem" description="Verify removing an item from the cart" finished-at="2025-10-26T12:02:41 IST" duration-ms="1619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_006_removeItem -->
+        <test-method signature="TC_007_placeOrder()[pri:7, instance:com.bstack.base.AddToCartTest@3700ec9c]" started-at="2025-10-26T12:02:41 IST" name="TC_007_placeOrder" description="Verify placing an order with valid details" finished-at="2025-10-26T12:02:45 IST" duration-ms="3914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_007_placeOrder -->
+        <test-method signature="TC_008_emptyCartCheckout()[pri:8, instance:com.bstack.base.AddToCartTest@3700ec9c]" started-at="2025-10-26T12:02:45 IST" name="TC_008_emptyCartCheckout" description="Verify checkout flow fails when cart is empty" finished-at="2025-10-26T12:03:16 IST" duration-ms="31124" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='bag__quantity']"}
+  (Session info: chrome=141.0.7390.108)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f903ddcc01f3464782795c955ca2bc, findElement {using=xpath, value=//span[@class='bag__quantity']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\ramgopal\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51907}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51907/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f903ddcc01f3464782795c955ca2bc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='bag__quantity']"}
+  (Session info: chrome=141.0.7390.108)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f903ddcc01f3464782795c955ca2bc, findElement {using=xpath, value=//span[@class='bag__quantity']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\ramgopal\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51907}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51907/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f903ddcc01f3464782795c955ca2bc
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at com.bstack.base.AddToCartTest.TC_008_emptyCartCheckout(AddToCartTest.java:123)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_008_emptyCartCheckout -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.bstack.base.AddToCartTest@3700ec9c]" started-at="2025-10-26T12:03:16 IST" name="tearDownReport" finished-at="2025-10-26T12:03:17 IST" duration-ms="1054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- com.bstack.base.AddToCartTest -->
+    </test> <!-- Tests_Bstackdemo -->
+  </suite> <!-- Bstackdemo_Suite -->
 </testng-results>
